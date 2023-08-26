@@ -1,0 +1,19 @@
+.cms-content {
+  ol,
+  ul {
+    padding-left: .75rem;
+    list-style: inherit;
+    list-style-position: inside;
+  }
+
+  ol {
+    padding-left: rem-calc(30px);
+    list-style: decimal;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}

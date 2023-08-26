@@ -1,0 +1,129 @@
+.product-thumbs {
+  margin-right: -5px;
+  margin-left: -5px;
+}
+.product-thumbs__elem {
+  padding: 0 5px;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: 0.3s ease opacity;
+  flex: 0 0 33.33333333%;
+  max-width: 33.33333333%;
+}
+.product-thumbs__elem:focus, .product-thumbs__elem:hover {
+  opacity: 0.6;
+}
+.product-thumbs__elem.swiper-slide-thumb-active {
+  opacity: 1;
+}
+@media (min-width: 576px) {
+  .product-thumbs__elem {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.product-main-images {
+  position: relative;
+}
+.product-main-images__modal-trigger-layer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  width: 1.6em;
+  height: 1.6em;
+  padding: 0;
+  line-height: 1.6em;
+  border: 0;
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+@media (max-width: 992px) {
+  .product-main-images__modal-trigger-layer {
+    font-size: calc(0.85rem + 0.6451612903vw);
+  }
+}
+
+.product-customization {
+  margin: 40px 0;
+}
+.product-customization .product-customization-item {
+  margin: 20px 0;
+}
+.product-customization .product-message {
+  width: 100%;
+  height: 3.125rem;
+  padding: 0.625rem;
+  resize: none;
+  background: #f8f9fa;
+  border: none;
+}
+.product-customization .product-message:focus {
+  background-color: #fff;
+  outline: 0.1875rem solid #007bff;
+}
+.product-customization .file-input {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 2.625rem;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+}
+.product-customization .customization-message {
+  margin-top: 20px;
+}
+.product-customization .custom-file {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2.625rem;
+  margin-top: 20px;
+  line-height: 2.625rem;
+  color: #6c757d;
+  text-indent: 0.625rem;
+  background: #f8f9fa;
+}
+.product-customization .custom-file button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+}
+.product-customization small {
+  color: #6c757d;
+}
+
+.attribute-radio__label {
+  position: relative;
+  margin: 0;
+}
+.attribute-radio__input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+}
+.attribute-radio__input:checked ~ .attribute-radio__text {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.attribute-radio__text {
+  display: block;
+  min-width: 2.1875rem;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid #dee2e6;
+  border-radius: 0.4rem;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>mitraia_home_video</name>
+	<displayName><![CDATA[home video]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[a module for display a video on the home page]]></description>
+	<author><![CDATA[Pierre Gonet]]></author>
+	<tab><![CDATA[front_office_features]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>

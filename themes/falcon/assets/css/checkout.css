@@ -1,0 +1,183 @@
+.product-line-grid {
+  align-items: center;
+}
+.product-line-grid:not(:last-child) {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dee2e6;
+}
+.product-line-grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -10px;
+}
+@media (min-width: 768px) {
+  .product-line-grid__row {
+    flex-wrap: nowrap;
+  }
+}
+.product-line-grid__block {
+  padding: 0 0.625rem;
+}
+.product-line-grid__block--image {
+  align-self: flex-start;
+  flex: 0 0 80px;
+  max-width: 80px;
+  order: -3;
+}
+@media (min-width: 768px) {
+  .product-line-grid__block--image {
+    align-self: center;
+    flex: 0 0 100px;
+    max-width: 100px;
+  }
+}
+.product-line-grid__block--prod {
+  order: -2;
+  flex: 0 0 calc(100% - 5rem - 3.125rem);
+  max-width: calc(100% - 5rem - 3.125rem);
+}
+@media (min-width: 768px) {
+  .product-line-grid__block--prod {
+    flex: 1 1 auto;
+    max-width: inherit;
+  }
+}
+.product-line-grid__block--qty {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: 0.9375rem 0 0;
+}
+@media (min-width: 768px) {
+  .product-line-grid__block--qty {
+    margin: 0;
+    flex: 0 0 8.125rem;
+    max-width: 8.125rem;
+  }
+}
+.product-line-grid__block--total {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: 0.9375rem 0 0;
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .product-line-grid__block--total {
+    margin: 0;
+    text-align: center;
+    flex: 0 0 7.5rem;
+    max-width: 7.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .product-line-grid__block--total {
+    flex: 0 0 9.375rem;
+    max-width: 9.375rem;
+  }
+}
+.product-line-grid__block--delete {
+  flex: 0 0 3.125rem;
+  max-width: 3.125rem;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .product-line-grid__block--delete {
+    align-self: flex-start;
+    order: -1;
+    padding-top: 0.3125rem;
+  }
+}
+
+.checkout-step:not(:first-child) {
+  border-top: 0.0625rem solid rgba(0, 0, 0, 0.125);
+}
+.checkout-step__header {
+  border-bottom: 0;
+}
+.checkout-step .step-number {
+  display: inline-block;
+}
+.checkout-step .content {
+  border-top: 0.0625rem solid rgba(0, 0, 0, 0.125);
+}
+.checkout-step .not-allowed {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.checkout-step .content,
+.checkout-step .done,
+.checkout-step .step-edit {
+  display: none;
+}
+.checkout-step.-unreachable .step-title {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+.checkout-step.-current .step-title {
+  cursor: default;
+}
+.checkout-step.-current .content {
+  display: block;
+}
+.checkout-step.-reachable.-complete .done {
+  display: inline-block;
+}
+.checkout-step.-reachable.-complete .content {
+  display: none;
+}
+.checkout-step.-current.-reachable.-complete .done,
+.checkout-step.-current.-reachable.-complete .step-edit {
+  display: none;
+}
+.checkout-step.-current.-reachable.-complete .step-number {
+  display: inline-block;
+}
+.checkout-step.-current.-reachable.-complete .content {
+  display: block;
+}
+
+.js-payment-binary {
+  display: none;
+}
+.js-payment-binary .accept-cgv {
+  display: none;
+}
+.js-payment-binary.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.js-payment-binary.disabled::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  content: "";
+}
+.js-payment-binary.disabled .accept-cgv {
+  display: block;
+}
+
+.checkout-option__col--thumb {
+  flex: 0 0 3.125rem;
+  max-width: 3.125rem;
+}
+@media (min-width: 576px) {
+  .checkout-option__col--thumb {
+    flex: 0 0 3.75rem;
+    max-width: 3.75rem;
+  }
+}
+
+.checkout-option-block {
+  position: relative;
+}
+.checkout-option-block > input {
+  position: absolute;
+  left: -99999em;
+}
+.checkout-option-block.selected .card {
+  border-color: #007bff;
+}

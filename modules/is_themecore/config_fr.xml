@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>is_themecore</name>
+    <displayName><![CDATA[Theme core module]]></displayName>
+    <version><![CDATA[4.1.0]]></version>
+    <description><![CDATA[Required for theme to work.]]></description>
+    <author><![CDATA[Igor Stępień]]></author>
+    <tab><![CDATA[others]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

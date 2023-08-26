@@ -1,0 +1,291 @@
+/*Default blog page*/
+#module-everpsblog-blog .article, #module-everpsblog-blog .evercategory,
+#module-everpsblog-category .article, #module-everpsblog-author .article, #module-everpsblog-category .evercategory,
+#module-everpsblog-tag .article, #module-everpsblog-tag .evercategory{
+    border: 1px solid #D3D3D3;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#module-everpsblog-blog .article h3, #module-everpsblog-blog .evercategory h3,
+#module-everpsblog-category .article, #module-everpsblog-author .article, #module-everpsblog-category .evercategory h3,
+#module-everpsblog-tag .article, #module-everpsblog-tag .evercategory h3{
+    text-align: left;
+}
+#module-everpsblog-blog .article a, #module-everpsblog-blog .evercategory a,
+#module-everpsblog-category .article, #module-everpsblog-author .article, #module-everpsblog-category .evercategory a,
+#module-everpsblog-tag .article, #module-everpsblog-tag .evercategory a{
+    text-decoration: none;
+}
+#module-everpsblog-blog .article-content,
+#module-everpsblog-category .article-content,
+#module-everpsblog-tag .article-content,
+#module-everpsblog-author .article-content{
+    padding-top: 1rem;
+    padding-bottom: : 1rem;
+}
+/* Listings */
+.article-img{
+    display: flex;
+    justify-content: center;
+}
+/*Posts*/
+#module-everpsblog-post .post-header,
+#module-everpsblog-category .category-header,
+#module-everpsblog-tag .tag-header,
+#module-everpsblog-author .author-header{
+    display: flex;
+    justify-content: center;
+}
+#module-everpsblog-post .postcontent{
+    border: 1px solid #D3D3D3;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+#module-everpsblog-post .postcontent img{
+    width: auto!important;
+}
+#module-everpsblog-post .leaveComment{
+    border: 1px solid #D3D3D3;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+#module-everpsblog-post .zoomed img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+#module-everpsblog-post .zoomed img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.author-icon{
+    max-width: 40px;
+}
+#module-everpsblog-post .social-sharing{
+    margin-top: 0;
+    justify-content: flex-end;
+}
+#module-everpsblog-post .social-sharing li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+}
+#module-everpsblog-post .social-sharing li .text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+#module-everpsblog-post .taggedIn a{
+    /*float:left;*/
+    margin:0 0 7px 20px;
+    position:relative;
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:0.7em;
+    font-weight:bold;
+    text-decoration:none;
+    color:#996633;
+    text-shadow:0px 1px 0px rgba(255,255,255,.4);
+    padding:0.417em 0.417em 0.417em 0.917em;
+    border-top:1px solid #d99d38;
+    border-right:1px solid #d99d38;
+    border-bottom:1px solid #d99d38;
+    -webkit-border-radius:0 0.25em 0.25em 0;
+    -moz-border-radius:0 0.25em 0.25em 0;
+    border-radius:0 0.25em 0.25em 0;
+    background-image: -webkit-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 71));
+    background-image: -moz-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 71));
+    background-image: -o-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 71));
+    background-image: -ms-linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 71));
+    background-image: linear-gradient(top, rgb(254, 218, 113), rgb(254, 186, 71));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#feda71', EndColorStr='#feba47');
+    -webkit-box-shadow:
+        inset 0 1px 0 #faeaba,
+        0 1px 1px rgba(0,0,0,.1);
+    -moz-box-shadow:
+        inset 0 1px 0 #faeaba,
+        0 1px 1px rgba(0,0,0,.1);
+    box-shadow:
+        inset 0 1px 0 #faeaba,
+        0 1px 1px rgba(0,0,0,.1);
+    z-index:100;
+}
+#module-everpsblog-post .taggedIn a:before, #right-column .tag_wrapper .tag:before {
+    content:'';
+    width:1.30em;
+    height:1.358em;
+    background-image: -webkit-linear-gradient(left top, rgb(254, 218, 113), rgb(254, 186, 71));
+    background-image: -moz-linear-gradient(left top, rgb(254, 218, 113), rgb(254, 186, 71));
+    background-image: -o-linear-gradient(left top, rgb(254, 218, 113), rgb(254, 186, 71));
+    background-image: -ms-linear-gradient(left top, rgb(254, 218, 113), rgb(254, 186, 71));
+    background-image: linear-gradient(left top, rgb(254, 218, 113), rgb(254, 186, 71));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#feda71', EndColorStr='#feba47');
+    position:absolute;
+    left:-0.69em;
+    top:.2em;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+    border-left:1px solid #d99d38;
+    border-bottom:1px solid #d99d38;
+    -webkit-border-radius:0 0 0 0.25em;
+    -moz-border-radius:0 0 0 0.25em;
+    border-radius:0 0 0 0.25em;
+    z-index:1;
+}
+#module-everpsblog-post .taggedIn a:after, #right-column .tag_wrapper .tag:after {
+    content:'';
+    width:0.5em;
+    height:0.5em;
+    background:#fff;
+    -webkit-border-radius:4.167em;
+    -moz-border-radius:4.167em;
+    border-radius:4.167em;
+    border:1px solid #d99d38;
+    -webkit-box-shadow:0 1px 0 #faeaba;
+    -moz-box-shadow:0 1px 0 #faeaba;
+    box-shadow:0 1px 0 #faeaba;
+    position:absolute;
+    top:0.667em;
+    left:-0.083em;
+    z-index:9999;
+}
+#module-everpsblog-post .taggedIn a:hover, #right-column .tag_wrapper .tag:hover {
+    background-image: -webkit-linear-gradient(top, rgb(254, 225, 141), rgb(254, 200, 108));
+    background-image: -moz-linear-gradient(top, rgb(254, 225, 141), rgb(254, 200, 108));
+    background-image: -o-linear-gradient(top, rgb(254, 225, 141), rgb(254, 200, 108));
+    background-image: -ms-linear-gradient(top, rgb(254, 225, 141), rgb(254, 200, 108));
+    background-image: linear-gradient(top, rgb(254, 225, 141), rgb(254, 200, 108));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#fee18d', EndColorStr='#fec86c');
+    border-color:#e1b160;
+}
+#module-everpsblog-post .taggedIn a:hover:before, #right-column .tag_wrapper .tag:hover:before {
+    background-image: -webkit-linear-gradient(left top, rgb(254, 225, 141), rgb(254, 200, 108));
+    background-image: -moz-linear-gradient(left top, rgb(254, 225, 141), rgb(254, 200, 108));
+    background-image: -o-linear-gradient(left top, rgb(254, 225, 141), rgb(254, 200, 108));
+    background-image: -ms-linear-gradient(left top, rgb(254, 225, 141), rgb(254, 200, 108));
+    background-image: linear-gradient(left top, rgb(254, 225, 141), rgb(254, 200, 108));
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#fee18d', EndColorStr='#fec86c');
+    border-color:#e1b160;
+}
+/*Rewriting bad themes*/
+#module-everpsblog-post #evercomment{
+    display: block!important;
+}
+/*Posts : missing Bootstrap CSS*/
+#module-everpsblog-post .form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border-radius: 0;
+}
+/*Comment zone*/
+#module-everpsblog-post #leaveComment {
+    font-size: 1.3rem;
+}
+#module-everpsblog-post #commentsTitle {
+    font-size: 1.3rem;
+}
+#module-everpsblog-post .commentcontainer {
+    margin-top: 3%;
+}
+#module-everpsblog-post .commentblock {
+    border: 1px solid #eee;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 1%;
+    padding: 10px;
+    margin-bottom: 3%;
+    font-size: 0.9rem;
+}
+#module-everpsblog-post .comment{
+    padding-top: 8px;
+}
+#module-everpsblog-post .commentdate{
+    text-align: right;
+}
+/*Linked products*/
+#module-everpsblog-post #postProducts {
+    font-size: 1.3rem;
+}
+/* Social links */
+.twitter:before {
+    content: "";
+    background-image: url(../img/twitter.svg);
+    background-size: cover;
+}
+.facebook:before {
+    content: "";
+    background-image: url(../img/facebook.svg);
+    background-size: cover;
+    background-position: center;
+}
+.linkedin:before {
+    content: "";
+    background-image: url(../img/linkedin.svg);
+    background-size: cover;
+    background-position: center;
+}
+.facebook.icon-gray {
+    background-image: url(../img/facebook.svg);
+    background-size: cover;
+    background-position: center;
+}
+.twitter.icon-gray {
+    background-image: url(../img/twitter.svg);
+    background-size: cover;
+    background-position: center;
+}
+.linkedin.icon-gray {
+    background-image: url(../img/linkedin.svg);
+    background-size: cover;
+    background-position: center;
+}
+/* Rewriting products listing */
+body#module-everpsblog-blog .products,
+body#module-everpsblog-tag .products,
+body#module-everpsblog-author .products,
+body#module-everpsblog-post .products{
+    padding: 0%;
+}
+body#module-everpsblog-blog #products .product-miniature,
+body#module-everpsblog-blog .featured-products .product-miniature,
+body#module-everpsblog-blog .product-accessories .product-miniature,
+body#module-everpsblog-blog .product-miniature .product-miniature,
+body#module-everpsblog-tag #products .product-miniature,
+body#module-everpsblog-tag .featured-products .product-miniature,
+body#module-everpsblog-tag .product-accessories .product-miniature,
+body#module-everpsblog-tag .product-miniature .product-miniature,
+body#module-everpsblog-author #products .product-miniature,
+body#module-everpsblog-author .featured-products .product-miniature,
+body#module-everpsblog-author .product-accessories .product-miniature,
+body#module-everpsblog-author .product-miniature .product-miniature,
+body#module-everpsblog-post #products .product-miniature,
+body#module-everpsblog-post .featured-products .product-miniature,
+body#module-everpsblog-post .product-accessories .product-miniature,
+body#module-everpsblog-post .product-miniature .product-miniature{
+    margin: 0 .3rem;
+}
+/* Missing Bootstrap */
+.d-flex{
+    display: flex;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.rounded-circle {
+    border-radius: 50%;
+}
+.d-none{
+    display: none;
+}

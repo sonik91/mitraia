@@ -1,0 +1,28 @@
+.bloghome{
+  margin-top: 150px;
+  .bloghometitle{
+    .products-section-title{
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .wrapper-slider-blog-home{
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    .swiper-button-next, .swiper-button-prev{
+      color: $gray-900;
+      &::after{
+        font-size: 20px;
+      }
+    }
+
+    .swiper-button-next{
+      right: var(--swiper-navigation-sides-offset, -8px);
+    }
+
+    .swiper-button-prev{
+      left: var(--swiper-navigation-sides-offset, -8px);
+    }
+  }
+}

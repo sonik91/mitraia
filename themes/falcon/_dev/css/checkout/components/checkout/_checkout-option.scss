@@ -1,0 +1,13 @@
+@use "sass:map";
+
+.checkout-option {
+  &__col {
+    &--thumb {
+      @include  custom-col(rem-calc(50px));
+
+      @include  media-breakpoint-up(sm) {
+        @include  custom-col(rem-calc(60px));
+      }
+    }
+  }
+}

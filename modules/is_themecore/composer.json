@@ -1,0 +1,33 @@
+{
+    "name": "oksydan/is_themecore",
+    "description": "Theme core module",
+    "type": "prestashop-module",
+    "license": "AFL-3.0",
+    "authors": [
+        {
+            "name": "Igor Stępień",
+            "email": "igor@istpien.dev",
+            "homepage": "https://istpien.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "rosell-dk/webp-convert": "^2.9"
+    },
+    "require-dev": {
+        "prestashop/php-dev-tools": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Oksydan\\Module\\IsThemeCore\\": "src/"
+        }
+    },
+    "config": {
+        "prepend-autoloader": false,
+        "allow-plugins": {
+            "phpro/grumphp-shim": false,
+            "phpstan/extension-installer": false
+        }
+    }
+}
