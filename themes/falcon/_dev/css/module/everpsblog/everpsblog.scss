@@ -10,6 +10,7 @@
     position: relative;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 50px;
     .swiper-button-next, .swiper-button-prev{
       color: $gray-900;
       &::after{
@@ -23,6 +24,24 @@
 
     .swiper-button-prev{
       left: var(--swiper-navigation-sides-offset, -8px);
+    }
+
+    .article{
+      .article-img{
+        margin-bottom: 30px;
+      }
+
+      .article-content{
+        text-align: center;
+        font-family: $font-custom;
+        margin-bottom: 0;
+      }
+
+      .everpsblogcontent{
+        text-align: center;
+
+        font-family: $font-custom;
+      }
     }
   }
 }

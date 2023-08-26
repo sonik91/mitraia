@@ -2,3 +2,15 @@
   font-size: inherit;
   vertical-align: middle;
 }
+
+.btn-secondary{
+  background-color: #fff;
+  font-family: $font-custom;
+  color: #000;
+  font-size: 1.2rem;
+
+  &:hover{
+    background-color: $primary;
+    color: $white;
+  }
+}

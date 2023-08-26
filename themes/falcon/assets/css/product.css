@@ -61,7 +61,7 @@
 }
 .product-customization .product-message:focus {
   background-color: #fff;
-  outline: 0.1875rem solid #007bff;
+  outline: 0.1875rem solid #803813;
 }
 .product-customization .file-input {
   position: absolute;
@@ -114,8 +114,8 @@
 }
 .attribute-radio__input:checked ~ .attribute-radio__text {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #803813;
+  border-color: #803813;
 }
 .attribute-radio__text {
   display: block;

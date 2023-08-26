@@ -70,5 +70,11 @@
         flex-grow: 0;
       }
     }
+    &--logo{
+      img{
+        max-height: 80px;
+        width: auto;
+      }
+    }
   }
 }
